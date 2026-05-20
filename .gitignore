@@ -23,6 +23,15 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.slnx
+*.vsidx
+*.v2
+
 # .NET Core
 project.lock.json
 project.fragment.lock.json
@@ -55,3 +64,19 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+
+# Metadata / cache
+*.metadata
+*.bin
+
+# IDE configs
+.vscode/
+.idea/
