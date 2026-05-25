@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "Beca de Excelencia Académica",
+    "carrera": "Ingeniería en Sistemas",
+    "fechaLimite": "2026-12-31T00:00:00",
+    "requisitos": "Promedio mínimo 3.5, estar matriculado",
+    "descripcion": "Beca para estudiantes destacados con excelente desempeño académico"
+  },
+  {
+    "id": 2,
+    "nombre": "Beca de Responsabilidad Social",
+    "carrera": "Administración",
+    "fechaLimite": "2026-11-30T00:00:00",
+    "requisitos": "Haber realizado actividades de voluntariado",
+    "descripcion": "Beca para estudiantes comprometidos con la comunidad"
+  },
+  {
+    "id": 3,
+    "nombre": "Beca Deportiva",
+    "carrera": "Educación Física",
+    "fechaLimite": "2026-10-31T00:00:00",
+    "requisitos": "Ser atleta de nivel competitivo",
+    "descripcion": "Apoyo económico para atletas de alto rendimiento"
+  },
+  {
+    "id": 4,
+    "nombre": "Beca por Situación Económica",
+    "carrera": "Ingeniería en Sistemas",
+    "fechaLimite": "2026-09-30T00:00:00",
+    "requisitos": "Ingresos familiares menores a 2 salarios mínimos",
+    "descripcion": "Asistencia financiera para estudiantes en condición de vulnerabilidad"
+  }
+]

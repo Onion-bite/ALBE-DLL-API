@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6GEsCwGcmls=",
+  "dgSpecHash": "5NGrPWtkwhI=",
   "success": true,
-  "projectFilePath": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\SistemaBecas\\BecasAPI\\BecasAPI.csproj",
+  "projectFilePath": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\BecasAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.8\\microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
-    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.8\\microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
   ],
   "logs": []
 }
