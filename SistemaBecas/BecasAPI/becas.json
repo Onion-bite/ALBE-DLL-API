@@ -38,5 +38,13 @@
     "FechaLimite": "2026-12-31T00:00:00",
     "Requisitos": "Promedio \u003E 15",
     "Descripcion": "Beca nacional"
+  },
+  {
+    "Id": 6,
+    "Nombre": "Beca leucemia",
+    "Carrera": "Ing. industrial",
+    "FechaLimite": "2026-12-11T00:00:00",
+    "Requisitos": "Promedio \u003E 12",
+    "Descripcion": "Beca privada"
   }
 ]

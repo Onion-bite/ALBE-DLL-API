@@ -1,25 +1,41 @@
 # Visual Studio
 .vs/
+.vscode/
 *.vsidx
 *.user
 *.suo
 *.sln.iml
 Properties/launchSettings.json
+.code-workspace
 
 # IDEs
-.vscode/
 .idea/
+*.swp
+*.swo
+*~
 
 # System
 .DS_Store
 Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Environment files
+.env
+.env.local
+.env.*.local
 
 # Node (si lo usas)
 node_modules/
 package-lock.json
+yarn.lock
+npm-debug.log*
 
 # Logs
 *.log
+*.logs
+logs/
+Logs/
 
 # Build results
 [Dd]ebug/
@@ -36,9 +52,42 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+[Ll]ogFiles/
 
 # .NET Core
 project.lock.json
 project.fragment.lock.json
 artifacts/
+*.nuget.props
+*.nuget.targets
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Visual Studio cache/options
+.cache/
+.csharpierignore
+
+# Rider
+.idea/
+*.sln.iml
+.idea_modules/
+
+# Test Results
+TestResults/
+coverage/
+*.trx
+
+# Build artifacts
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+~*
 
