@@ -1,34 +1,42 @@
 [
   {
-    "id": 1,
-    "nombre": "Beca de Excelencia Académica",
-    "carrera": "Ingeniería en Sistemas",
-    "fechaLimite": "2026-12-31T00:00:00",
-    "requisitos": "Promedio mínimo 3.5, estar matriculado",
-    "descripcion": "Beca para estudiantes destacados con excelente desempeño académico"
+    "Id": 1,
+    "Nombre": "Beca de Excelencia Acad\u00E9mica",
+    "Carrera": "Ingenier\u00EDa en Sistemas",
+    "FechaLimite": "2026-12-31T00:00:00",
+    "Requisitos": "Promedio m\u00EDnimo 3.5, estar matriculado",
+    "Descripcion": "Beca para estudiantes destacados con excelente desempe\u00F1o acad\u00E9mico"
   },
   {
-    "id": 2,
-    "nombre": "Beca de Responsabilidad Social",
-    "carrera": "Administración",
-    "fechaLimite": "2026-11-30T00:00:00",
-    "requisitos": "Haber realizado actividades de voluntariado",
-    "descripcion": "Beca para estudiantes comprometidos con la comunidad"
+    "Id": 2,
+    "Nombre": "Beca de Responsabilidad Social",
+    "Carrera": "Administraci\u00F3n",
+    "FechaLimite": "2026-11-30T00:00:00",
+    "Requisitos": "Haber realizado actividades de voluntariado",
+    "Descripcion": "Beca para estudiantes comprometidos con la comunidad"
   },
   {
-    "id": 3,
-    "nombre": "Beca Deportiva",
-    "carrera": "Educación Física",
-    "fechaLimite": "2026-10-31T00:00:00",
-    "requisitos": "Ser atleta de nivel competitivo",
-    "descripcion": "Apoyo económico para atletas de alto rendimiento"
+    "Id": 3,
+    "Nombre": "Beca Deportiva",
+    "Carrera": "Educaci\u00F3n F\u00EDsica",
+    "FechaLimite": "2026-10-31T00:00:00",
+    "Requisitos": "Ser atleta de nivel competitivo",
+    "Descripcion": "Apoyo econ\u00F3mico para atletas de alto rendimiento"
   },
   {
-    "id": 4,
-    "nombre": "Beca por Situación Económica",
-    "carrera": "Ingeniería en Sistemas",
-    "fechaLimite": "2026-09-30T00:00:00",
-    "requisitos": "Ingresos familiares menores a 2 salarios mínimos",
-    "descripcion": "Asistencia financiera para estudiantes en condición de vulnerabilidad"
+    "Id": 4,
+    "Nombre": "Beca por Situaci\u00F3n Econ\u00F3mica",
+    "Carrera": "Ingenier\u00EDa en Sistemas",
+    "FechaLimite": "2026-09-30T00:00:00",
+    "Requisitos": "Ingresos familiares menores a 2 salarios m\u00EDnimos",
+    "Descripcion": "Asistencia financiera para estudiantes en condici\u00F3n de vulnerabilidad"
+  },
+  {
+    "Id": 5,
+    "Nombre": "Beca PRONABEC",
+    "Carrera": "Ing. de Sistemas",
+    "FechaLimite": "2026-12-31T00:00:00",
+    "Requisitos": "Promedio \u003E 15",
+    "Descripcion": "Beca nacional"
   }
 ]

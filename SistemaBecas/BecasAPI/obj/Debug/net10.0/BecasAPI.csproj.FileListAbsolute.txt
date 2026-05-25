@@ -70,3 +70,5 @@ C:\REPOS\Onion-Bite\ALBE-DLL-API\SistemaBecas\BecasAPI\obj\Debug\net10.0\refint\
 C:\REPOS\Onion-Bite\ALBE-DLL-API\SistemaBecas\BecasAPI\obj\Debug\net10.0\BecasAPI.pdb
 C:\REPOS\Onion-Bite\ALBE-DLL-API\SistemaBecas\BecasAPI\obj\Debug\net10.0\BecasAPI.genruntimeconfig.cache
 C:\REPOS\Onion-Bite\ALBE-DLL-API\SistemaBecas\BecasAPI\obj\Debug\net10.0\ref\BecasAPI.dll
+C:\REPOS\Onion-Bite\ALBE-DLL-API\SistemaBecas\BecasAPI\bin\Debug\net10.0\becas.json
+C:\REPOS\Onion-Bite\ALBE-DLL-API\SistemaBecas\BecasAPI\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|c:\\repos\\onion-bite\\albe-dll-api\\sistemabecas\\becasapi\\servicios\\usuarioservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|solutionrelative:becasapi\\servicios\\usuarioservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|c:\\repos\\onion-bite\\albe-dll-api\\sistemabecas\\becasapi\\controllers\\alertascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|solutionrelative:becasapi\\controllers\\alertascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|c:\\repos\\onion-bite\\albe-dll-api\\sistemabecas\\becasapi\\servicios\\becaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|solutionrelative:becasapi\\servicios\\becaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|c:\\repos\\onion-bite\\albe-dll-api\\sistemabecas\\becasapi\\controllers\\becascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|solutionrelative:becasapi\\controllers\\becascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|c:\\repos\\onion-bite\\albe-dll-api\\sistemabecas\\becasapi\\servicios\\becaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|solutionrelative:becasapi\\servicios\\becaservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|c:\\repos\\onion-bite\\albe-dll-api\\sistemabecas\\becasapi\\servicios\\usuarioservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|solutionrelative:becasapi\\servicios\\usuarioservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|c:\\repos\\onion-bite\\albe-dll-api\\sistemabecas\\becasapi\\controllers\\alertascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|solutionrelative:becasapi\\controllers\\alertascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54AB1F75-156A-CFBB-F7BA-99DF5AE56706}|BecasAPI\\BecasAPI.csproj|c:\\repos\\onion-bite\\albe-dll-api\\sistemabecas\\becasapi\\helpers\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AlertasController.cs",
               "DocumentMoniker": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\Controllers\\AlertasController.cs",
               "RelativeDocumentMoniker": "BecasAPI\\Controllers\\AlertasController.cs",
@@ -82,27 +82,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "BecasController.cs",
               "DocumentMoniker": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\Controllers\\BecasController.cs",
               "RelativeDocumentMoniker": "BecasAPI\\Controllers\\BecasController.cs",
               "ToolTip": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\Controllers\\BecasController.cs",
               "RelativeToolTip": "BecasAPI\\Controllers\\BecasController.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAqwAoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T05:29:14.826Z"
+              "WhenOpened": "2026-05-25T05:29:14.826Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "BecaServicio.cs",
               "DocumentMoniker": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\Servicios\\BecaServicio.cs",
               "RelativeDocumentMoniker": "BecasAPI\\Servicios\\BecaServicio.cs",
               "ToolTip": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\Servicios\\BecaServicio.cs",
               "RelativeToolTip": "BecasAPI\\Servicios\\BecaServicio.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAADwv5YAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T04:42:23.773Z"
+              "WhenOpened": "2026-05-25T04:42:23.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -178,13 +180,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UsuarioServicio.cs",
               "DocumentMoniker": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\Servicios\\UsuarioServicio.cs",
               "RelativeDocumentMoniker": "BecasAPI\\Servicios\\UsuarioServicio.cs",
               "ToolTip": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\Servicios\\UsuarioServicio.cs",
               "RelativeToolTip": "BecasAPI\\Servicios\\UsuarioServicio.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAIwEsAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T05:09:48.662Z",
               "EditorCaption": ""
