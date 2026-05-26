@@ -41,10 +41,10 @@
   },
   {
     "Id": 6,
-    "Nombre": "Beca leucemia",
+    "Nombre": "Beca Luces",
     "Carrera": "Ing. industrial",
-    "FechaLimite": "2026-12-11T00:00:00",
-    "Requisitos": "Promedio \u003E 12",
+    "FechaLimite": "2026-12-12T00:00:00",
+    "Requisitos": "Promedio \u003E 15",
     "Descripcion": "Beca privada"
   }
 ]

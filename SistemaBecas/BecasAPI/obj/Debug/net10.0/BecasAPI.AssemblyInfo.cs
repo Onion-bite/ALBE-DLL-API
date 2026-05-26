@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BecasAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1500189602fc4ef9810fd8a137c25be2ed0f57d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0858c035208811afbd4e4b55113802d553c8569")]
 [assembly: System.Reflection.AssemblyProductAttribute("BecasAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BecasAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
