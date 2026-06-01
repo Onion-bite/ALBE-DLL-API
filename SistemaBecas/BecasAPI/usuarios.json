@@ -1,0 +1,10 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Axel Castro",
+    "Correo": "axel@gmail.com",
+    "Carrera": "Ing. de Sistemas",
+    "Edad": 0,
+    "Rol": "Admin"
+  }
+]

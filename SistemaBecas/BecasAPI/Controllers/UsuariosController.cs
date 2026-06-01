@@ -21,8 +21,6 @@ namespace BecasAPI.Controllers
             _servicio = servicio;
         }
 
-        // ── GET /api/usuarios ────────────────────────────────────────────────
-        // Llama a ListarUsuarios() que devuelve List<Usuario> desde LstSimple
         [HttpGet]
         public IActionResult ObtenerTodos()
         {
@@ -31,8 +29,6 @@ namespace BecasAPI.Controllers
             return Ok(usuarios);
         }
 
-        // ── GET /api/usuarios/{id} ───────────────────────────────────────────
-        // Llama a BuscarUsuario(id) que usa Buscar() de la LstSimple
         [HttpGet("{id}")]
         public IActionResult ObtenerPorId(int id)
         {
@@ -53,15 +49,10 @@ namespace BecasAPI.Controllers
             return Ok(usuario);
         }
 
-        // ── POST /api/usuarios ───────────────────────────────────────────────
-        // Recibe un CrearUsuarioDTO y construye un objeto Usuario para el servicio
         [HttpPost]
         public IActionResult Registrar([FromBody] CrearUsuarioDTO dto)
         {
-            // Convertimos el DTO a la entidad real Usuario
-            // ¿Por qué usamos DTO y no Usuario directo?
-            // Porque el cliente no debe enviar el Id (lo genera el servicio).
-            // El DTO sólo trae los campos que el cliente puede controlar.
+            
             Usuario nuevoUsuario = new Usuario
             {
                 Nombre = dto.Nombre,
@@ -94,8 +85,7 @@ namespace BecasAPI.Controllers
                 }
             );
         }
-        // ── DELETE /api/usuarios/{id} ────────────────────────────────────────
-        // Llama a EliminarUsuario(id) que usa Eliminar() de la LstSimple
+        
         [HttpDelete("{id}")]
         public IActionResult Eliminar(int id)
         {

@@ -21,9 +21,6 @@ namespace BecasAPI.Controllers
             _servicio = servicio;
         }
 
-        // ── GET /api/alertas ─────────────────────────────────────────────────
-        // Lista TODAS las alertas — uso del Admin
-        // Internamente llama a ListarAlertas() de la CustomQueue
         [HttpGet]
         public IActionResult ObtenerTodas()
         {
@@ -31,26 +28,18 @@ namespace BecasAPI.Controllers
             return Ok(alertas);
         }
 
-        // ── GET /api/alertas/usuario/{usuarioId} ─────────────────────────────
-        // Lista las alertas NO leídas de un usuario específico
-        // Usa VerAlertas() que filtra por usuarioId y Leida == false
         [HttpGet("usuario/{usuarioId}")]
         public IActionResult ObtenerPorUsuario(int usuarioId)
         {
             List<Alerta> alertas = _servicio.VerAlertas(usuarioId);
 
-            // Si no tiene alertas pendientes, igual devolvemos 200
-            // con lista vacía — no es un error, simplemente no hay
             return Ok(alertas);
         }
 
-        // ── POST /api/alertas ────────────────────────────────────────────────
-        // Genera y encola una nueva alerta (FIFO)
-        // El body JSON debe tener: UsuarioId, BecaId, Mensaje
         [HttpPost]
         public IActionResult Generar([FromBody] CrearAlertaDTO dto)
         {
-            // Llamamos al servicio con los 3 datos necesarios
+            // llamamos al servicio con los 3 datos necesarios
             RespuestaOperacion resultado = _servicio.GenerarAlerta(
                 dto.UsuarioId,
                 dto.BecaId,
@@ -74,9 +63,6 @@ namespace BecasAPI.Controllers
             });
         }
 
-        // ── PATCH /api/alertas/{id}/leida ────────────────────────────────────
-        // Marca una alerta específica como leída
-        // Usamos PATCH (no PUT) porque solo modificamos UN campo: Leida
         [HttpPatch("{id}/leida")]
         public IActionResult MarcarComoLeida(int id)
         {
