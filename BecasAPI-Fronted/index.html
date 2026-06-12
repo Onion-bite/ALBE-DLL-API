@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Becas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Buscador de Becas</h1>
+            <p>Encuentra becas disponibles según tu carrera</p>
+        </header>
+
+        <main>
+            <div class="search-section">
+                <label for="carrera">Selecciona tu carrera:</label>
+                <input 
+                    type="text" 
+                    id="carrera" 
+                    placeholder="Ej: Ingeniería en Sistemas, Administración..."
+                    autocomplete="off"
+                >
+                <button onclick="buscarBecas()">Buscar</button>
+            </div>
+
+            <div id="loading" class="loading hidden">
+                Cargando becas...
+            </div>
+
+            <div id="resultados" class="resultados"></div>
+        </main>
+
+        <footer>
+            <p>API de Becas UPN © 2026</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

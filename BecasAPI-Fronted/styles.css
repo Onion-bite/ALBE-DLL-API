@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+main {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.search-section label {
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.search-section input {
+    flex: 1;
+    min-width: 250px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.search-section input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.search-section button {
+    padding: 12px 30px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-section button:hover {
+    background: #764ba2;
+}
+
+.loading {
+    text-align: center;
+    color: #667eea;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+
+.loading.hidden {
+    display: none;
+}
+
+.resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.beca-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.beca-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.beca-card h3 {
+    color: #667eea;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.beca-card p {
+    margin: 8px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.beca-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.fecha-vencimiento {
+    color: #e74c3c;
+    font-weight: 600;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.sin-resultados {
+    text-align: center;
+    padding: 30px;
+    color: #999;
+    font-size: 1.1rem;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .search-section {
+        flex-direction: column;
+    }
+
+    .search-section label {
+        width: 100%;
+    }
+
+    .search-section input {
+        width: 100%;
+    }
+
+    .search-section button {
+        width: 100%;
+    }
+
+    .resultados {
+        grid-template-columns: 1fr;
+    }
+}
