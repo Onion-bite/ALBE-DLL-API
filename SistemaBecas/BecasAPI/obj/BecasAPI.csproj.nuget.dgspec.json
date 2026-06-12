@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\SistemaBecas\\BecasAPI\\BecasAPI.csproj": {}
+    "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\BecasAPI.csproj": {}
   },
   "projects": {
-    "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj": {
+    "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj",
+        "projectUniqueName": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj",
         "projectName": "DLL  ESTRUCTURAS VERSION 2",
-        "projectPath": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj",
+        "projectPath": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net472": {
@@ -23,20 +23,20 @@
         }
       }
     },
-    "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\SistemaBecas\\BecasAPI\\BecasAPI.csproj": {
+    "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\BecasAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\SistemaBecas\\BecasAPI\\BecasAPI.csproj",
+        "projectUniqueName": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\BecasAPI.csproj",
         "projectName": "BecasAPI",
-        "projectPath": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\SistemaBecas\\BecasAPI\\BecasAPI.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\SistemaBecas\\BecasAPI\\obj\\",
+        "projectPath": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\BecasAPI.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\SistemaBecas\\BecasAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -52,8 +52,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj": {
-                "projectPath": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj"
+              "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj": {
+                "projectPath": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj"
               }
             }
           }
@@ -99,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

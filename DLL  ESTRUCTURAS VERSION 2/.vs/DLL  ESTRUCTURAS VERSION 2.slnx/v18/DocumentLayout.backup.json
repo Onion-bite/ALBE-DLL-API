@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\",
+  "WorkspaceRootPath": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\dll  estructuras version 2\\abb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|solutionrelative:dll  estructuras version 2\\abb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\dll  estructuras version 2\\lstdoble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|solutionrelative:dll  estructuras version 2\\lstdoble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|d:\\universidad\\2026\\estructura\\t2\\nuevo\\dll  estructuras version 2\\dll  estructuras version 2\\lstsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|c:\\repos\\onion-bite\\albe-dll-api\\dll  estructuras version 2\\dll  estructuras version 2\\lstsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|solutionrelative:dll  estructuras version 2\\lstsimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\dll  estructuras version 2\\customqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\dll  estructuras version 2\\abb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|solutionrelative:dll  estructuras version 2\\abb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\dll  estructuras version 2\\lstdoble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|solutionrelative:dll  estructuras version 2\\lstdoble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\dll  estructuras version 2\\customqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C0E7DA86-B49D-43B7-872E-B5053E34AE3C}|DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2.csproj|solutionrelative:dll  estructuras version 2\\customqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,41 +26,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "LstSimple.cs",
-              "DocumentMoniker": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\LstSimple.cs",
+              "DocumentMoniker": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\LstSimple.cs",
               "RelativeDocumentMoniker": "DLL  ESTRUCTURAS VERSION 2\\LstSimple.cs",
-              "ToolTip": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\LstSimple.cs",
+              "ToolTip": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\LstSimple.cs",
               "RelativeToolTip": "DLL  ESTRUCTURAS VERSION 2\\LstSimple.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowI4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAwHYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T03:27:58.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LstDoble.cs",
-              "DocumentMoniker": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\LstDoble.cs",
+              "DocumentMoniker": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\LstDoble.cs",
               "RelativeDocumentMoniker": "DLL  ESTRUCTURAS VERSION 2\\LstDoble.cs",
-              "ToolTip": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\LstDoble.cs",
+              "ToolTip": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\LstDoble.cs",
               "RelativeToolTip": "DLL  ESTRUCTURAS VERSION 2\\LstDoble.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAYwFAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T03:04:49.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T03:04:49.2Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "CustomQueue.cs",
-              "DocumentMoniker": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\CustomQueue.cs",
+              "DocumentMoniker": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\CustomQueue.cs",
               "RelativeDocumentMoniker": "DLL  ESTRUCTURAS VERSION 2\\CustomQueue.cs",
-              "ToolTip": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\CustomQueue.cs",
+              "ToolTip": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\CustomQueue.cs",
               "RelativeToolTip": "DLL  ESTRUCTURAS VERSION 2\\CustomQueue.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAuwEwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -68,16 +71,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ABB.cs",
-              "DocumentMoniker": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\ABB.cs",
+              "DocumentMoniker": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\ABB.cs",
               "RelativeDocumentMoniker": "DLL  ESTRUCTURAS VERSION 2\\ABB.cs",
-              "ToolTip": "D:\\UNIVERSIDAD\\2026\\ESTRUCTURA\\T2\\NUEVO\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\ABB.cs",
+              "ToolTip": "C:\\REPOS\\Onion-Bite\\ALBE-DLL-API\\DLL  ESTRUCTURAS VERSION 2\\DLL  ESTRUCTURAS VERSION 2\\ABB.cs",
               "RelativeToolTip": "DLL  ESTRUCTURAS VERSION 2\\ABB.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAowNUAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwNUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T01:13:55.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-25T01:13:55.395Z"
             }
           ]
         }

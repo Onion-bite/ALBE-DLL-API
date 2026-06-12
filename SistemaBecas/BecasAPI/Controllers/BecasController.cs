@@ -17,8 +17,6 @@ namespace BecasAPI.Controllers
             _servicio = new BecaServicio();
         }
 
-        // GET: api/becas
-        // USUARIO: Lista todas las becas disponibles
         [HttpGet]
         public IActionResult ListarBecas()
         {
@@ -41,8 +39,7 @@ namespace BecasAPI.Controllers
 
             return Ok(beca);
         }
-        // GET: api/becas/carrera/{carrera}
-        // USUARIO: Filtra becas por carrera
+
         [HttpGet("carrera/{carrera}")]
         public IActionResult FiltrarPorCarrera(string carrera)
         {
@@ -50,16 +47,13 @@ namespace BecasAPI.Controllers
             return Ok(becas);
         }
 
-        // GET: api/becas/proximas/{dias}
-        // SISTEMA: Obtiene becas próximas a vencer
         [HttpGet("proximas/{dias}")]
         public IActionResult ObtenerProximasAVencer(int dias)
         {
             List<Beca> becas = _servicio.ObtenerProximasAVencer(dias);
             return Ok(becas);
         }
-        // POST: api/becas
-        // ADMIN: Inserta una nueva beca
+        
         [HttpPost]
         public IActionResult InsertarBeca([FromBody] CrearBecaDTO dto)
         {
@@ -88,8 +82,7 @@ namespace BecasAPI.Controllers
                 Mensaje = resultado.Mensaje
             });
         }
-        // PUT: api/becas
-        // ADMIN: Modifica una beca existente
+        
         [HttpPut]
         public IActionResult ModificarBeca([FromBody] ModificarBecaDTO dto) 
         {
@@ -119,8 +112,7 @@ namespace BecasAPI.Controllers
             });
 
         }
-        // DELETE: api/becas/{id}
-        // ADMIN: Elimina una beca por Id
+        
         [HttpDelete("{id}")]
         public IActionResult EliminarBeca(int id) 
         {

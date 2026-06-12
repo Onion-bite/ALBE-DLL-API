@@ -6,7 +6,7 @@ namespace BecasAPI.Servicios
 {
     public class AlertaService
     {
-        // Ruta del archivo donde se persisten las alertas
+        // Ruta del archivo donde se guardan las alertas
         private readonly string _ruta = "alertas.json";
 
         // Estructura principal: Cola FIFO para gestión de alertas
