@@ -233,13 +233,5 @@ namespace DLL__ESTRUCTURAS_VERSION_2
 
             cantidad = 0;
         }
-
-
-
-
-
-
-
-
     }
 }

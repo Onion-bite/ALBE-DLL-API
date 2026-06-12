@@ -63,7 +63,6 @@ namespace DLL__ESTRUCTURAS_VERSION_2
 
     }
 
-    //PORSEACASO
     public class CustomStack<T> 
     {
         public class Nodo
@@ -140,7 +139,5 @@ namespace DLL__ESTRUCTURAS_VERSION_2
 
             cantidad = 0;
         }
-
-
     }
 }

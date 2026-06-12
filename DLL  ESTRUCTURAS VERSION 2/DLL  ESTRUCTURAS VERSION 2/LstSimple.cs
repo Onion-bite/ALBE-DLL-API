@@ -131,7 +131,6 @@ namespace DLL__ESTRUCTURAS_VERSION_2
             return lista;
         }
 
-        
         public void Limpiar()
         {
             primero = null;

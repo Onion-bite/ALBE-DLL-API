@@ -1,8 +1,40 @@
 [
   {
-    "Id": 1,
+    "Id": 2,
+    "Nombre": "Lisette Araujo",
+    "Correo": "Lisette@gmail.com",
+    "Carrera": "Ing. de Sistemas",
+    "Edad": 0,
+    "Rol": "Admin"
+  },
+  {
+    "Id": 3,
+    "Nombre": "Nilton Cabrera",
+    "Correo": "Nilton@gmail.com",
+    "Carrera": "Ing. de Sistemas",
+    "Edad": 0,
+    "Rol": "Admin"
+  },
+  {
+    "Id": 4,
+    "Nombre": "Jose Maria",
+    "Correo": "Jose@gmail.com",
+    "Carrera": "Ing. de Sistemas",
+    "Edad": 0,
+    "Rol": "Usuario"
+  },
+  {
+    "Id": 5,
     "Nombre": "Axel Castro",
-    "Correo": "axel@gmail.com",
+    "Correo": "Axel@gmail.com",
+    "Carrera": "Ing. de Sistemas",
+    "Edad": 0,
+    "Rol": "Admin"
+  },
+  {
+    "Id": 6,
+    "Nombre": "Axel David",
+    "Correo": "David@gmail.com",
     "Carrera": "Ing. de Sistemas",
     "Edad": 0,
     "Rol": "Admin"
