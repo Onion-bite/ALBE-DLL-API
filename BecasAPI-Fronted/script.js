@@ -89,7 +89,8 @@ function mostrarResultados(becas) {
                 <p><span class="beca-label">Requisitos:</span> ${convertirLinks(reqBeca)}</p>
                 <p><span class="beca-label">Descripción:</span> ${convertirLinks(descBeca)}</p>
                 <p class="fecha-vencimiento">
-                    📅 Vence: ${new Date(fechaBeca).toLocaleDateString('es-ES')}
+                    <img src="https://api.iconify.design/lucide:calendar-clock.svg?color=%23fca5a5" alt="Plazo" class="icono-vence">
+                    Vence: ${new Date(fechaBeca).toLocaleDateString('es-ES')}
                 </p>
             </div>
         </div>
