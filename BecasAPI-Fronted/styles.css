@@ -7,7 +7,6 @@
 /* ── ESTADO INICIAL (Centrado con background-1) ── */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Agrega public/ a la ruta dentro de url() */
     background: url('public/background-1.png') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
@@ -31,12 +30,12 @@ body {
     object-fit: cover;
 }
 
-/* Contenedor Translúcido (Glassmorphism) */
+/* Contenedor Translúcido Inicial */
 .container {
     width: 90%;
     max-width: 800px;
-    background: rgba(15, 23, 42, 0.4); /* Fondo oscuro semitransparente */
-    backdrop-filter: blur(12px); /* Efecto cristal desenfocado */
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 16px;
@@ -45,31 +44,28 @@ body {
     transition: all 0.5s ease;
 }
 
-/* ── ESTADO DE RESULTADOS ACTIVOS (CONTRASTE SUAVE) ── */
+/* ── ESTADO DE RESULTADOS ACTIVOS (Caja extendida para llenar el espacio) ── */
 body.modo-resultados {
-    /* Un azul grisáceo claro que armoniza con la paleta original sin ser un blanco brillante */
     background: #4c6585; 
-    justify-content: flex-start; /* Sube el contenido hacia arriba */
+    justify-content: flex-start; 
 }
 
 body.modo-resultados .top-banner {
-    display: block; /* Muestra el banner background-2 */
+    display: block; 
 }
 
 body.modo-resultados .container {
-    max-width: 1200px;
-    margin-top: -50px; /* Sube el buscador sobre el banner */
-    
-    /* Azul medianoche translúcido intermedio (bajamos la opacidad para suavizar el golpe visual) */
+    width: 92%;
+    max-width: 1250px; /* ¡Expandido! Ahora abarca más pantalla y elimina el vacío */
+    margin: -50px auto 40px auto; /* Centrado perfecto sin deformarse */
     background: rgba(25, 55, 104, 0.75); 
-    
-    padding: 20px 40px;
+    padding: 30px 40px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 15px 30px rgba(15, 23, 42, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 body.modo-resultados header p {
-    display: none; /* Oculta el subtítulo para ahorrar espacio */
+    display: none; 
 }
 
 /* ── ELEMENTOS INTERNOS ── */
@@ -106,11 +102,6 @@ header h1 {
     transition: border-color 0.3s;
 }
 
-.search-section select:focus {
-    border-color: #60a5fa;
-    box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.3);
-}
-
 .search-section button {
     padding: 14px 35px;
     background: #3b82f6;
@@ -128,10 +119,10 @@ header h1 {
     transform: scale(1.02);
 }
 
-/* ── TARJETAS DE RESULTADOS (Layout 1:1 Imagen - Info) ── */
+/* ── GRID DE TARJETAS (Pasa a 3 columnas automáticamente si hay espacio) ── */
 .resultados {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 25px;
     margin-top: 30px;
 }
@@ -143,7 +134,7 @@ header h1 {
 .beca-card {
     display: flex;
     gap: 20px;
-    background: rgba(255, 255, 255, 0.05); /* Tarjeta sutilmente blanca */
+    background: rgba(255, 255, 255, 0.05); 
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 15px;
@@ -156,11 +147,10 @@ header h1 {
     background: rgba(255, 255, 255, 0.08);
 }
 
-/* Contenedor de la imagen 1:1 */
 .beca-img-container {
-    width: 150px;
-    height: 150px;
-    flex-shrink: 0; /* Evita que la imagen se encoja */
+    width: 130px;
+    height: 130px;
+    flex-shrink: 0; 
     border-radius: 8px;
     overflow: hidden;
 }
@@ -180,15 +170,15 @@ header h1 {
 
 .beca-info h3 {
     color: #93c5fd;
-    margin-bottom: 8px;
-    font-size: 1.2rem;
+    margin-bottom: 6px;
+    font-size: 1.15rem;
     line-height: 1.3;
 }
 
 .beca-info p {
-    margin: 4px 0;
+    margin: 3px 0;
     color: #cbd5e1;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.4;
 }
 
@@ -208,8 +198,8 @@ header h1 {
 }
 
 .icono-vence {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     object-fit: contain;
 }
 
@@ -241,15 +231,54 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ── RESPONSIVE ── */
+/* ── CONTENEDOR FLOTANTE PARA EL ASCII DE KYORO ── */
+.ascii-sidebar {
+    display: none;
+}
+
+body.modo-resultados .ascii-sidebar {
+    display: block;
+    position: fixed;   
+    left: 25px; /* Lo arrima sutilmente al borde izquierdo externo */
+    top: 50%;          
+    transform: translateY(-50%);
+    z-index: 5;
+    
+    /* Caja estilo cristal independiente */
+    background: rgba(255, 255, 255, 0.06); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ascii-sidebar pre {
+    font-family: monospace;
+    font-size: 7.5px;    /* Tamaño compacto y estético */
+    line-height: 1.05;    
+    color: #cbd5e1;       /* ¡Arreglado! Gris claro brillante para que se note perfectamente */
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* ── RESPONSIVE ADAPTATIVO ── */
+@media (max-width: 1450px) {
+    /* Si la pantalla no es ultra-ancha, ocultamos el ASCII para dar prioridad total a las becas */
+    body.modo-resultados .ascii-sidebar {
+        display: none; 
+    }
+}
+
 @media (max-width: 768px) {
     .beca-card {
-        flex-direction: column; /* Apila la imagen arriba y la info abajo en móviles */
+        flex-direction: column; 
     }
     
     .beca-img-container {
         width: 100%;
-        height: 200px;
+        height: 180px;
     }
 
     .search-section {
