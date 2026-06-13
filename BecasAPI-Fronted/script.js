@@ -1,16 +1,16 @@
 // URL base de tu API (cambiar según el puerto donde esté hosteada)
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'http://localhost:5056/api';
 
 async function buscarBecas() {
-    const carrera = document.getElementById('carrera').value.trim();
+    const carrera = document.getElementById('carrera').value;
 
     if (!carrera) {
-        alert('Por favor ingresa una carrera');
+        alert('Por favor selecciona una carrera');
         return;
     }
 
     mostrarCargando(true);
-    
+
     try {
         const response = await fetch(`${API_BASE_URL}/becas/carrera/${encodeURIComponent(carrera)}`);
         
@@ -53,10 +53,3 @@ function mostrarResultados(becas) {
         </div>
     `).join('');
 }
-
-// Permitir buscar al presionar Enter
-document.getElementById('carrera').addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-        buscarBecas();
-    }
-});

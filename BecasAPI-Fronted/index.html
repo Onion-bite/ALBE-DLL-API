@@ -16,12 +16,21 @@
         <main>
             <div class="search-section">
                 <label for="carrera">Selecciona tu carrera:</label>
-                <input 
-                    type="text" 
-                    id="carrera" 
-                    placeholder="Ej: Ingeniería en Sistemas, Administración..."
-                    autocomplete="off"
-                >
+                <select id="carrera">
+                    <option value="">-- Elige una carrera --</option>
+                    <option value="Ingeniería de Sistemas">Ingeniería de Sistemas</option>
+                    <option value="Gestión de Programas">Gestión de Programas</option>
+                    <option value="Arquitectura de Hardware">Arquitectura de Hardware</option>
+                    <option value="Ciberseguridad">Ciberseguridad</option>
+                    <option value="Estudiantes de educación superior técnica">Estudiantes de educación superior técnica</option>
+                    <option value="Licenciatura">Licenciatura</option>
+                    <option value="Posgrado">Posgrado</option>
+                    <option value="Doctorado">Doctorado</option>
+                    <option value="Ciencias de la Computación">Ciencias de la Computación</option>
+                    <option value="Desarrollo de Videojuegos">Desarrollo de Videojuegos</option>
+                    <option value="Estructuras de Datos">Estructuras de Datos</option>
+                    <option value="Ing. industrial">Ing. industrial</option>
+                </select>
                 <button onclick="buscarBecas()">Buscar</button>
             </div>
 
