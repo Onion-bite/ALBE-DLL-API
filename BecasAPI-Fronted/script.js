@@ -102,6 +102,6 @@ function convertirLinks(texto) {
     if (!texto) return '';
     const urlRegex = /(https?:\/\/[^\s]+)/g;
     return texto.replace(urlRegex, url =>
-        `<a href="${url}" target="_blank" rel="noopener noreferrer">Ver Link</a>`
+        `<a href="${url}" target="_blank" rel="noopener noreferrer">Ver más aquí</a>`
     );
 }
