@@ -45,11 +45,18 @@ function mostrarResultados(becas) {
         <div class="beca-card">
             <h3>${beca.nombre}</h3>
             <p><span class="beca-label">Carrera:</span> ${beca.carrera}</p>
-            <p><span class="beca-label">Descripción:</span> ${beca.descripcion}</p>
-            <p><span class="beca-label">Requisitos:</span> ${beca.requisitos}</p>
+            <p><span class="beca-label">Descripción:</span> ${convertirLinks(beca.descripcion)}</p>
+            <p><span class="beca-label">Requisitos:</span> ${convertirLinks(beca.requisitos)}</p>
             <p class="fecha-vencimiento">
                 📅 Vence: ${new Date(beca.fechaLimite).toLocaleDateString('es-ES')}
             </p>
         </div>
     `).join('');
+}
+
+function convertirLinks(texto) {
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    return texto.replace(urlRegex, url =>
+        `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`
+    );
 }
