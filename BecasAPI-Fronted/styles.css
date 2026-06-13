@@ -194,8 +194,17 @@ header h1 {
 .fecha-vencimiento {
     color: #fca5a5 !important;
     font-weight: 600;
-    margin-top: auto !important; /* Empuja la fecha al fondo */
+    margin-top: auto !important;
     padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.icono-vence {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
 .beca-info a {
