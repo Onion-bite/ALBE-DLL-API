@@ -1,10 +1,74 @@
 [
   {
     "Id": 1,
-    "Nombre": "Certificado Profesional de IBM Program Manager",
-    "Carrera": "Gesti\u00F3n de Programas",
-    "FechaLimite": "2028-12-12T00:00:00",
-    "Requisitos": "No se requiere experiencia previa; recomendado para aspirantes a roles de gesti\u00F3n de proyectos o programas",
-    "Descripcion": "Programa en l\u00EDnea de 7 cursos dise\u00F1ado por IBM para desarrollar habilidades en gesti\u00F3n de programas, liderazgo, Agile y preparaci\u00F3n para el examen PMI-PgMP. Nivel principiante, flexible y con certificado profesional reconocido. https://www.coursera.org/professional-certificates/ibm-program-manager"
+    "Nombre": "IBM SkillsBuild (Credenciales y Cursos Gratuitos)",
+    "Carrera": "Ingeniería de Sistemas, Arquitectura de Hardware, Ciberseguridad",
+    "FechaLimite": "2028-12-31T23:59:59",
+    "Requisitos": "Registro gratuito para estudiantes.",
+    "Descripcion": "Permite obtener badges oficiales en áreas como fundamentos de programación y arquitectura de hardware. https://www.coursera.org/professional-certificates/ibm-program-manager"
+  },
+  {
+    "Id": 2,
+    "Nombre": "Beca Santander de Excelencia Académica 2026",
+    "Carrera": "Educación superior técnica, licenciatura, posgrado o doctorado en todas las ramas",
+    "FechaLimite": "2026-06-29T23:59:59",
+    "Requisitos": "Mantener condición de estudiante regular, contar con al menos 30% de créditos aprobados, promedio de excelencia y haber completado un curso en Santander Open Academy.",
+    "Descripcion": "Beca de excelencia académica para estudiantes superiores. https://app.santanderopenacademy.com/es/program/de-excelencia-academica-2026"
+  },
+  {
+    "Id": 3,
+    "Nombre": "Becas de Ayuda Económica Coursera",
+    "Carrera": "Ciencias de la Computación, Desarrollo de Videojuegos, Estructuras de Datos",
+    "FechaLimite": "2026-12-31T23:59:59",
+    "Requisitos": "Enviar un breve ensayo justificando la necesidad del apoyo económico.",
+    "Descripcion": "Ayuda para acceder a certificados de universidades top. https://www.coursera.org/"
+  },
+  {
+    "Id": 4,
+    "Nombre": "Becas OEA - Universidad Ana G. Méndez (UAGM)",
+    "Carrera": "Ciberseguridad, Administración de Empresas, Psicología, Investigación Forense y Diseño Gráfico",
+    "FechaLimite": "2026-07-31T23:59:59",
+    "Requisitos": "Ser ciudadano/residente permanente de un estado miembro de la OEA (excepto EE.UU.), haber sido admitido en UAGM, capacidad de asumir costos restantes, GPA >= 3.0/4.0.",
+    "Descripcion": "Beca parcial que cubre hasta el 50% de la matrícula en programas presenciales y el 60% en virtuales. https://uagm.edu/es/vida-estudiantil/becas-oea"
+  },
+  {
+    "Id": 5,
+    "Nombre": "Programa Impulso TEC – Datos, Diseño y Desarrollo con IA",
+    "Carrera": "Ingeniería de Sistemas, Informática, Software, Ciencias de la Computación, TI, UX/UI, Análisis de Datos y afines",
+    "FechaLimite": "2026-07-15T23:59:59",
+    "Requisitos": "Ser mayor de 18 años, completar el formulario de inscripción y tener disponibilidad para participar.",
+    "Descripcion": "Formación en análisis de datos, diseño digital, IA, empleabilidad y habilidades tecnológicas. Modalidad virtual. https://www.guayerd.com/es/catalogo/conectar/"
+  },
+  {
+    "Id": 6,
+    "Nombre": "Curso de Inteligencia Artificial y Prompt Engineering (IBM SkillsBuild)",
+    "Carrera": "Ingeniería de Sistemas, Informática, Software, Ciencias de la Computación, TI, Ciencia de Datos, Marketing, Administración y afines",
+    "FechaLimite": "2028-12-31T23:59:59",
+    "Requisitos": "Ser mayor de 18 años y residir en países específicos de Latinoamérica.",
+    "Descripcion": "Curso gratuito 100% asincrónico con certificación de IBM sobre IA generativa, Prompt Engineering, ChatGPT, etc. https://www.guayerd.com/es/catalogo/ibm-ia-prompts/"
+  },
+  {
+    "Id": 7,
+    "Nombre": "Becas Grupo Romero – Más de 1,000 cursos online gratis",
+    "Carrera": "INGENIERÍA, SISTEMAS, ADMINISTRACIÓN, COMERCIO, CONTABILIDAD, DISEÑO, MARKETING, MEDICINA, EDUCACIÓN y cualquier carrera afín",
+    "FechaLimite": "2028-12-31T23:59:59",
+    "Requisitos": "Ser peruano, tener DNI, acceso a internet, correo electrónico y computadora/celular.",
+    "Descripcion": "1,000+ cursos 100% online, gratis, a tu ritmo y con certificados digitales. https://lms.becasgruporomero.pe/auth/becasauth/login.php"
+  },
+  {
+    "Id": 8,
+    "Nombre": "Beca Think Big 2026",
+    "Carrera": "Pregrado o maestría en Universidad de Bristol (Reino Unido)",
+    "FechaLimite": "2026-04-10T23:59:59",
+    "Requisitos": "Haber postulado a un curso elegible de pregrado/maestría en la Universidad de Bristol, perfil académico destacado.",
+    "Descripcion": "Beca para estudiar en la Universidad de Bristol (Reino Unido). https://www.pronabec.gob.pe/beca-think-big-2026/"
+  },
+  {
+    "Id": 9,
+    "Nombre": "Beca Alianza del Pacífico",
+    "Carrera": "Intercambios académicos en pregrado, posgrado e investigación",
+    "FechaLimite": "2026-12-31T23:59:59",
+    "Requisitos": "Estudiantes de pregrado/posgrado, investigadores o docentes universitarios.",
+    "Descripcion": "Intercambio académico en Perú, Chile, Colombia y México. https://www.pronabec.gob.pe/beca-alianza-del-pacifico/"
   }
 ]
