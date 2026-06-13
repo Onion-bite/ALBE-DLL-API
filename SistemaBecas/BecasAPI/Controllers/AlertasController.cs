@@ -10,12 +10,8 @@ namespace BecasAPI.Controllers
     [Route("api/alertas")]
     public class AlertasController : ControllerBase
     {
-        // ── DEPENDENCIA ──────────────────────────────────────────────────────
-        // El servicio maneja la CustomQueue<Alerta> internamente
         private readonly AlertaService _servicio;
 
-        // ── CONSTRUCTOR ──────────────────────────────────────────────────────
-        // ASP.NET inyecta el AlertaService automáticamente
         public AlertasController(AlertaService servicio)
         {
             _servicio = servicio;
@@ -76,7 +72,7 @@ namespace BecasAPI.Controllers
                     Exito = false,
                     Mensaje = resultado.Mensaje
                 });
-            }
+            } 
 
             return Ok(new RespuestaDTO
             {

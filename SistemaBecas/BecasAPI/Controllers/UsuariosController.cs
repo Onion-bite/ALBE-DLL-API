@@ -108,7 +108,5 @@ namespace BecasAPI.Controllers
                 Mensaje = resultado.Mensaje
             });
         }
-
     }
-
 }

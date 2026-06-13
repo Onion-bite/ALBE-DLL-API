@@ -110,7 +110,6 @@ namespace BecasAPI.Controllers
                 Exito = true,
                 Mensaje = resultado.Mensaje
             });
-
         }
         
         [HttpDelete("{id}")]
@@ -130,14 +129,6 @@ namespace BecasAPI.Controllers
                 Exito = true,
                 Mensaje = resultado.Mensaje
             });
-
-
         }
-
-
-
-
     }
-
-  
 }
