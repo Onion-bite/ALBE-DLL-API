@@ -91,3 +91,41 @@ build/
 *.backup
 ~*
 
+# Configuración de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Carpetas de compilación
+bin/
+obj/
+
+# Archivos de compilación y depuración
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+
+# Archivos de configuración locales
+*.dbmdl
+*.jfm
+*.ldf
+*.mdf
+
+# Archivos de paquetes
+packages/
+*.nupkg
+
+# Archivos de publicación
+publish/
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+
+# Archivos de configuración de IDE
+*.vscode/
