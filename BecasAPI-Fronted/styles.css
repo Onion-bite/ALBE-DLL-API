@@ -44,7 +44,7 @@ body {
     transition: all 0.5s ease;
 }
 
-/* ── ESTADO DE RESULTADOS ACTIVOS (Caja extendida para llenar el espacio) ── */
+/* ── ESTADO DE RESULTADOS ACTIVOS (Caja de 3 columnas) ── */
 body.modo-resultados {
     background: #4c6585; 
     justify-content: flex-start; 
@@ -56,8 +56,8 @@ body.modo-resultados .top-banner {
 
 body.modo-resultados .container {
     width: 92%;
-    max-width: 1250px; /* ¡Expandido! Ahora abarca más pantalla y elimina el vacío */
-    margin: -50px auto 40px auto; /* Centrado perfecto sin deformarse */
+    max-width: 1250px; 
+    margin: -50px auto 40px auto; 
     background: rgba(25, 55, 104, 0.75); 
     padding: 30px 40px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -119,7 +119,62 @@ header h1 {
     transform: scale(1.02);
 }
 
-/* ── GRID DE TARJETAS (Pasa a 3 columnas automáticamente si hay espacio) ── */
+/* ── [ARTE 1] GATO ANCHO INTEGRADO (PANTALLA DE INICIO) ── */
+.ascii-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ascii-home pre {
+    font-family: monospace;
+    font-size: 10.5px; 
+    line-height: 1.05;
+    color: rgba(255, 255, 255, 0.85); 
+    letter-spacing: 0.5px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Ocultar el gato central cuando estamos viendo los resultados */
+body.modo-resultados .ascii-home {
+    display: none;
+}
+
+/* ── [ARTE 2] CONTENEDOR FLOTANTE FLUIDO (SÓLO EN RESULTADOS) ── */
+.ascii-sidebar {
+    display: none; /* Oculto en el inicio */
+}
+
+body.modo-resultados .ascii-sidebar {
+    display: block;
+    position: fixed;   
+    left: 25px; 
+    top: 50%;          
+    transform: translateY(-50%);
+    z-index: 5;
+    background: rgba(255, 255, 255, 0.06); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.ascii-sidebar pre {
+    font-family: monospace;
+    font-size: 7.5px;    
+    line-height: 1.05;    
+    color: #cbd5e1;       
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* ── GRID DE TARJETAS ── */
 .resultados {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
@@ -231,41 +286,8 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ── CONTENEDOR FLOTANTE PARA EL ASCII DE KYORO ── */
-.ascii-sidebar {
-    display: none;
-}
-
-body.modo-resultados .ascii-sidebar {
-    display: block;
-    position: fixed;   
-    left: 25px; /* Lo arrima sutilmente al borde izquierdo externo */
-    top: 50%;          
-    transform: translateY(-50%);
-    z-index: 5;
-    
-    /* Caja estilo cristal independiente */
-    background: rgba(255, 255, 255, 0.06); 
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 14px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.ascii-sidebar pre {
-    font-family: monospace;
-    font-size: 7.5px;    /* Tamaño compacto y estético */
-    line-height: 1.05;    
-    color: #cbd5e1;       /* ¡Arreglado! Gris claro brillante para que se note perfectamente */
-    letter-spacing: 0.5px;
-    margin: 0;
-}
-
 /* ── RESPONSIVE ADAPTATIVO ── */
 @media (max-width: 1450px) {
-    /* Si la pantalla no es ultra-ancha, ocultamos el ASCII para dar prioridad total a las becas */
     body.modo-resultados .ascii-sidebar {
         display: none; 
     }
