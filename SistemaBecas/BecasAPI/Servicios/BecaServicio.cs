@@ -128,8 +128,10 @@ namespace BecasAPI.Servicios
         public List<Beca> FiltrarPorCarrera(string carrera)
         {
             List<Beca> todas = _listaBecas.ListarTodas();
+
+            // Usamos .Contains() para buscar el texto dentro de la cadena larga de carreras
             return todas
-                .Where(b => b.Carrera.ToLower() == carrera.ToLower())
+                .Where(b => b.Carrera.ToLower().Contains(carrera.ToLower().Trim()))
                 .ToList();
         }
 
