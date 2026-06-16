@@ -28,16 +28,16 @@ namespace BecasAPI.Servicios
             _cola.Limpiar();
 
             // Leer alertas del archivo
-            List<Alerta> alertas = JsonHelper.Leer<Alerta>(_ruta);
+            Alerta[] alertas = JsonHelper.Leer<Alerta>(_ruta);
 
             // Encolar cada alerta en orden
-            foreach (Alerta alerta in alertas)
-                _cola.Encolar(alerta);
+            for (int i = 0; i < alertas.Length; i++)
+                _cola.Encolar(alertas[i]);
         }
         // Guarda el estado actual de la cola en el archivo .json
         private void GuardarDatos()
         {
-            List<Alerta> alertas = _cola.ListarAlertas();
+            Alerta[] alertas = _cola.ListarAlertas();
             JsonHelper.Escribir<Alerta>(_ruta, alertas);
         }
 
@@ -45,14 +45,12 @@ namespace BecasAPI.Servicios
         public RespuestaOperacion GenerarAlerta(int usuarioId, int becaId, string mensaje)
         {
             // Leer alertas actuales para generar Id
-            List<Alerta> actuales = _cola.ListarAlertas();
+            Alerta[] actuales = _cola.ListarAlertas();
 
             // Crear la nueva alerta
             Alerta alerta = new Alerta
             {
-                Id = actuales.Count > 0
-                    ? actuales.Max(a => a.Id) + 1
-                    : 1,
+                Id = (actuales.Length > 0) ? (GetMaxId(actuales) + 1) : 1,
                 UsuarioId = usuarioId,
                 BecaId = becaId,
                 Mensaje = mensaje,
@@ -69,22 +67,47 @@ namespace BecasAPI.Servicios
             return new RespuestaOperacion(true, $"Alerta generada para usuario {usuarioId}");
         }
         // USUARIO: Ve sus alertas pendientes sin desencolar
-        public List<Alerta> VerAlertas(int usuarioId)
+        public Alerta[] VerAlertas(int usuarioId)
         {
             // Listar todas y filtrar por usuario
-            return _cola.ListarAlertas()
-                .Where(a => a.UsuarioId == usuarioId && !a.Leida)
-                .ToList();
+            Alerta[] todas = _cola.ListarAlertas();
+
+            int count = 0;
+            for (int i = 0; i < todas.Length; i++)
+            {
+                Alerta a = todas[i];
+                if (a != null && a.UsuarioId == usuarioId && !a.Leida)
+                    count++;
+            }
+
+            Alerta[] resultado = new Alerta[count];
+            int idx = 0;
+            for (int i = 0; i < todas.Length; i++)
+            {
+                Alerta a = todas[i];
+                if (a != null && a.UsuarioId == usuarioId && !a.Leida)
+                    resultado[idx++] = a;
+            }
+
+            return resultado;
         }
 
         // USUARIO: Marca una alerta como leída
         public RespuestaOperacion MarcarLeida(int alertaId)
         {
             // Obtener todas las alertas
-            List<Alerta> todas = _cola.ListarAlertas();
+            Alerta[] todas = _cola.ListarAlertas();
 
             // Buscar la alerta específica
-            Alerta? encontrada = todas.FirstOrDefault(a => a.Id == alertaId);
+            Alerta? encontrada = null;
+            for (int i = 0; i < todas.Length; i++)
+            {
+                if (todas[i] != null && todas[i].Id == alertaId)
+                {
+                    encontrada = todas[i];
+                    break;
+                }
+            }
 
             if (encontrada == null)
                 return new RespuestaOperacion(false, $"No existe alerta con Id {alertaId}");
@@ -94,8 +117,8 @@ namespace BecasAPI.Servicios
 
             // Reconstruir la cola con el cambio
             _cola.Limpiar();
-            foreach (Alerta a in todas)
-                _cola.Encolar(a);
+            for (int i = 0; i < todas.Length; i++)
+                _cola.Encolar(todas[i]);
 
             // Persistir cambios
             GuardarDatos();
@@ -103,21 +126,27 @@ namespace BecasAPI.Servicios
             return new RespuestaOperacion(true, $"Alerta {alertaId} marcada como leída");
         }
         // SISTEMA: Genera alertas automáticas para becas próximas a vencer
-        public void GenerarAlertasAutomaticas(List<Alerta> alertasNuevas)
+        public void GenerarAlertasAutomaticas(Alerta[] alertasNuevas)
         {
-            foreach (Alerta alerta in alertasNuevas)
+            for (int i = 0; i < alertasNuevas.Length; i++)
             {
+                Alerta alerta = alertasNuevas[i];
                 // Solo encolar si no existe ya una alerta igual
-                List<Alerta> actuales = _cola.ListarAlertas();
-                bool yaExiste = actuales.Any(
-                    a => a.UsuarioId == alerta.UsuarioId && a.BecaId == alerta.BecaId && !a.Leida
-                );
+                Alerta[] actuales = _cola.ListarAlertas();
+                bool yaExiste = false;
+                for (int j = 0; j < actuales.Length; j++)
+                {
+                    Alerta a = actuales[j];
+                    if (a != null && a.UsuarioId == alerta.UsuarioId && a.BecaId == alerta.BecaId && !a.Leida)
+                    {
+                        yaExiste = true;
+                        break;
+                    }
+                }
 
                 if (!yaExiste)
                 {
-                    alerta.Id = actuales.Count > 0
-                        ? actuales.Max(a => a.Id) + 1
-                        : 1;
+                    alerta.Id = (actuales.Length > 0) ? (GetMaxId(actuales) + 1) : 1;
                     _cola.Encolar(alerta);
                 }
             }
@@ -127,9 +156,20 @@ namespace BecasAPI.Servicios
         }
 
         // Lista todas las alertas (para el admin)
-        public List<Alerta> ListarTodas()
+        public Alerta[] ListarTodas()
         {
             return _cola.ListarAlertas();
+        }
+
+        private int GetMaxId(Alerta[] arr)
+        {
+            int max = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] != null && arr[i].Id > max)
+                    max = arr[i].Id;
+            }
+            return max;
         }
     }
 }

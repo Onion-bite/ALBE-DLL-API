@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -160,35 +159,39 @@ namespace DLL__ESTRUCTURAS_VERSION_2
 
             return false;
         }
-        public List<T> ListarTodas()
+        public T[] ListarTodas()
         {
-            List<T> lista =new List<T>();
+            T[] arreglo = new T[cantidad];
 
             Nodo actual = cabeza;
 
+            int idx = 0;
+
             while (actual != null)
             {
-                lista.Add(actual.Dato);
+                arreglo[idx++] = actual.Dato;
 
                 actual = actual.Adelante;
             }
 
-            return lista;
+            return arreglo;
         }
-        public List<T> ListarInverso()
+        public T[] ListarInverso()
         {
-            List<T> lista = new List<T>();
+            T[] arreglo = new T[cantidad];
 
             Nodo actual = cola;
 
+            int idx = 0;
+
             while (actual != null)
             {
-                lista.Add(actual.Dato);
+                arreglo[idx++] = actual.Dato;
 
                 actual = actual.Atras;
             }
 
-            return lista;
+            return arreglo;
         }
         public T EliminarPrimero()
         {

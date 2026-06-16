@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -114,21 +113,22 @@ namespace DLL__ESTRUCTURAS_VERSION_2
 
             return false;
         }
-        public List<T> ListarTodos()
+        public T[] ListarTodos()
         {
-            List<T> lista =
-                new List<T>();
+            T[] arreglo = new T[cantidad];
 
             Nodo<T> actual = primero;
 
+            int idx = 0;
+
             while (actual != null)
             {
-                lista.Add(actual.Dato);
+                arreglo[idx++] = actual.Dato;
 
                 actual = actual.Siguiente;
             }
 
-            return lista;
+            return arreglo;
         }
 
         public void Limpiar()

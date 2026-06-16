@@ -20,7 +20,7 @@ namespace BecasAPI.Controllers
         [HttpGet]
         public IActionResult ListarBecas()
         {
-            List<Beca> becas = _servicio.ListarBecas();
+            Beca[] becas = _servicio.ListarBecas();
             return Ok(becas);
         }
         // GET: api/becas/{id}
@@ -43,14 +43,14 @@ namespace BecasAPI.Controllers
         [HttpGet("carrera/{carrera}")]
         public IActionResult FiltrarPorCarrera(string carrera)
         {
-            List<Beca> becas = _servicio.FiltrarPorCarrera(carrera);
+            Beca[] becas = _servicio.FiltrarPorCarrera(carrera);
             return Ok(becas);
         }
 
         [HttpGet("proximas/{dias}")]
         public IActionResult ObtenerProximasAVencer(int dias)
         {
-            List<Beca> becas = _servicio.ObtenerProximasAVencer(dias);
+            Beca[] becas = _servicio.ObtenerProximasAVencer(dias);
             return Ok(becas);
         }
         

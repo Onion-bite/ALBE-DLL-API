@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,11 +46,8 @@ namespace DLL__ESTRUCTURAS_VERSION_2
             return lista.Ultimo;
 
         }
-        public List<T> ListarAlertas()
+        public T[] ListarAlertas()
         {
-            var listaAlertas =new List<T>();
-
-
             return lista.ListarTodas();
         }
         public void Limpiar()

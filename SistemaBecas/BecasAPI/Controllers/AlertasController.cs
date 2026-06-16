@@ -20,14 +20,14 @@ namespace BecasAPI.Controllers
         [HttpGet]
         public IActionResult ObtenerTodas()
         {
-            List<Alerta> alertas = _servicio.ListarTodas();
+            Alerta[] alertas = _servicio.ListarTodas();
             return Ok(alertas);
         }
 
         [HttpGet("usuario/{usuarioId}")]
         public IActionResult ObtenerPorUsuario(int usuarioId)
         {
-            List<Alerta> alertas = _servicio.VerAlertas(usuarioId);
+            Alerta[] alertas = _servicio.VerAlertas(usuarioId);
 
             return Ok(alertas);
         }

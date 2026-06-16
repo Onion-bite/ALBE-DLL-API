@@ -109,30 +109,37 @@ namespace DLL__ESTRUCTURAS_VERSION_2
 
             return BuscarRecursivo(nodo.Derecha,condicion);
         }
-        public List<T> BuscarRango(Func<T, bool> condicion)
+        public T[] BuscarRango(Func<T, bool> condicion)
         {
-            List<T> resultados =new List<T>();
+            T[] resultados = new T[cantidad];
+            int idx = 0;
 
-            BuscarRangoRecursivo(raiz, condicion,resultados);
+            BuscarRangoRecursivo(raiz, condicion, resultados, ref idx);
 
-            return resultados;
+            // resize to actual count
+            if (idx == resultados.Length)
+                return resultados;
+
+            T[] trimmed = new T[idx];
+            for (int i = 0; i < idx; i++) trimmed[i] = resultados[i];
+            return trimmed;
         }
 
-        private void BuscarRangoRecursivo(Nodo nodo,Func<T, bool> condicion,List<T> resultados)
+        private void BuscarRangoRecursivo(Nodo nodo,Func<T, bool> condicion,T[] resultados, ref int idx)
         {
             if (nodo == null)
             {
                 return;
             }
 
-            BuscarRangoRecursivo(nodo.Izquierda,condicion,resultados);
+            BuscarRangoRecursivo(nodo.Izquierda, condicion, resultados, ref idx);
 
             if (condicion(nodo.Dato))
             {
-                resultados.Add(nodo.Dato);
+                resultados[idx++] = nodo.Dato;
             }
 
-            BuscarRangoRecursivo(nodo.Derecha,condicion,resultados);
+            BuscarRangoRecursivo(nodo.Derecha, condicion, resultados, ref idx);
         }
         public void Eliminar(T dato)
         {
@@ -194,29 +201,35 @@ namespace DLL__ESTRUCTURAS_VERSION_2
 
             return nodo;
         }
-        public List<T> RecorridoInOrder()
+        public T[] RecorridoInOrder()
         {
-            List<T> lista =new List<T>();
+            T[] arreglo = new T[cantidad];
+            int idx = 0;
 
-            InOrderRecursivo(raiz,lista);
+            InOrderRecursivo(raiz, arreglo, ref idx);
 
-            return lista;
+            if (idx == arreglo.Length)
+                return arreglo;
+
+            T[] trimmed = new T[idx];
+            for (int i = 0; i < idx; i++) trimmed[i] = arreglo[i];
+            return trimmed;
         }
 
-        private void InOrderRecursivo( Nodo nodo,List<T> lista)
+        private void InOrderRecursivo( Nodo nodo,T[] lista, ref int idx)
         {
             if (nodo == null)
             {
                 return;
             }
 
-            InOrderRecursivo(nodo.Izquierda,lista); 
-            lista.Add(nodo.Dato);
+            InOrderRecursivo(nodo.Izquierda, lista, ref idx);
+            lista[idx++] = nodo.Dato;
 
-            InOrderRecursivo(nodo.Derecha,lista);
+            InOrderRecursivo(nodo.Derecha, lista, ref idx);
         }
 
-        public List<T> ObtenerProximasAVencer(int dias,Func<T, DateTime> obtenerFecha)
+        public T[] ObtenerProximasAVencer(int dias,Func<T, DateTime> obtenerFecha)
         {
             DateTime hoy = DateTime.Now;
 
@@ -224,7 +237,7 @@ namespace DLL__ESTRUCTURAS_VERSION_2
 
             return BuscarRango(x =>
             {
-                DateTime fecha =obtenerFecha(x);return fecha >= hoy && fecha <= limite;
+                DateTime fecha = obtenerFecha(x); return fecha >= hoy && fecha <= limite;
             });
         }
         public void Limpiar()
