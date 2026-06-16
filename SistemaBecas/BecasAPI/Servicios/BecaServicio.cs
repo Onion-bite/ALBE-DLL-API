@@ -34,11 +34,12 @@ namespace BecasAPI.Servicios
             _arbol.Limpiar();
 
             // Leer becas del archivo
-            List<Beca> becas = JsonHelper.Leer<Beca>(_ruta);
+            Beca[] becas = JsonHelper.Leer<Beca>(_ruta);
 
             // Insertar cada beca en ambas estructuras
-            foreach (Beca beca in becas)
+            for (int i = 0; i < becas.Length; i++)
             {
+                Beca beca = becas[i];
                 _listaBecas.InsertarAlFinal(beca);
                 _arbol.Insertar(beca);
             }
@@ -46,7 +47,7 @@ namespace BecasAPI.Servicios
         // Guarda el estado actual de la lista doble en el archivo .json
         private void GuardarDatos()
         {
-            List<Beca> becas = _listaBecas.ListarTodas();
+            Beca[] becas = _listaBecas.ListarTodas();
             JsonHelper.Escribir<Beca>(_ruta, becas);
         }
 
@@ -54,10 +55,22 @@ namespace BecasAPI.Servicios
         public RespuestaOperacion InsertarBeca(Beca beca)
         {
             // Generar Id automático
-            List<Beca> actuales = _listaBecas.ListarTodas();
-            beca.Id = actuales.Count > 0
-                ? actuales.Max(b => b.Id) + 1
-                : 1;
+            Beca[] actuales = _listaBecas.ListarTodas();
+            if (actuales.Length > 0)
+            {
+                int max = 0;
+                for (int i = 0; i < actuales.Length; i++)
+                {
+                    if (actuales[i] != null && actuales[i].Id > max)
+                        max = actuales[i].Id;
+                }
+
+                beca.Id = max + 1;
+            }
+            else
+            {
+                beca.Id = 1;
+            }
 
             // Insertar en ambas estructuras
             _listaBecas.InsertarAlFinal(beca);
@@ -102,8 +115,9 @@ namespace BecasAPI.Servicios
 
             // Reconstruir el ABB con los datos actualizados
             _arbol.Limpiar();
-            foreach (Beca b in _listaBecas.ListarTodas())
-                _arbol.Insertar(b);
+            Beca[] todas = _listaBecas.ListarTodas();
+            for (int i = 0; i < todas.Length; i++)
+                _arbol.Insertar(todas[i]);
 
             // Persistir cambios
             GuardarDatos();
@@ -112,7 +126,7 @@ namespace BecasAPI.Servicios
         }
 
         // ADMIN: Lista todas las becas
-        public List<Beca> ListarBecas()
+        public Beca[] ListarBecas()
         {
             return _listaBecas.ListarTodas();
         }
@@ -125,18 +139,34 @@ namespace BecasAPI.Servicios
         }
 
         // USUARIO: Filtra becas por carrera
-        public List<Beca> FiltrarPorCarrera(string carrera)
+        public Beca[] FiltrarPorCarrera(string carrera)
         {
-            List<Beca> todas = _listaBecas.ListarTodas();
+            Beca[] todas = _listaBecas.ListarTodas();
 
-            // Usamos .Contains() para buscar el texto dentro de la cadena larga de carreras
-            return todas
-                .Where(b => b.Carrera.ToLower().Contains(carrera.ToLower().Trim()))
-                .ToList();
+            string buscado = carrera.ToLower().Trim();
+
+            int count = 0;
+            for (int i = 0; i < todas.Length; i++)
+            {
+                Beca b = todas[i];
+                if (b != null && b.Carrera != null && b.Carrera.ToLower().Contains(buscado))
+                    count++;
+            }
+
+            Beca[] resultado = new Beca[count];
+            int idx = 0;
+            for (int i = 0; i < todas.Length; i++)
+            {
+                Beca b = todas[i];
+                if (b != null && b.Carrera != null && b.Carrera.ToLower().Contains(buscado))
+                    resultado[idx++] = b;
+            }
+
+            return resultado;
         }
 
         // SISTEMA: Obtiene becas próximas a vencer
-        public List<Beca> ObtenerProximasAVencer(int dias)
+        public Beca[] ObtenerProximasAVencer(int dias)
         {
             // El ABB recibe los días y una función que extrae la fecha de cada beca
             return _arbol.ObtenerProximasAVencer(dias, b => b.FechaLimite);

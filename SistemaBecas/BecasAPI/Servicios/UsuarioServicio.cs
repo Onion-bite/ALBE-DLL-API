@@ -27,16 +27,16 @@ namespace BecasAPI.Servicios
             _listaUsuarios.Limpiar();
 
             // Leer usuarios del archivo
-            List<Usuario> usuarios = JsonHelper.Leer<Usuario>(_ruta);
+            Usuario[] usuarios = JsonHelper.Leer<Usuario>(_ruta);
 
             // Insertar cada usuario en la lista
-            foreach (Usuario usuario in usuarios)
-                _listaUsuarios.InsertarAlFinal(usuario);
+            for (int i = 0; i < usuarios.Length; i++)
+                _listaUsuarios.InsertarAlFinal(usuarios[i]);
         }
         // Guarda el estado actual de la lista en el archivo .json
         private void GuardarDatos()
         {
-            List<Usuario> usuarios = _listaUsuarios.ListarTodos();
+            Usuario[] usuarios = _listaUsuarios.ListarTodos();
             JsonHelper.Escribir<Usuario>(_ruta, usuarios);
         }
 
@@ -50,10 +50,22 @@ namespace BecasAPI.Servicios
                 return new RespuestaOperacion(false, $"Ya existe un usuario con el correo {usuario.Correo}");
 
             // Generar Id automático
-            List<Usuario> actuales = _listaUsuarios.ListarTodos();
-            usuario.Id = actuales.Count > 0
-                ? actuales.Max(u => u.Id) + 1
-                : 1;
+            Usuario[] actuales = _listaUsuarios.ListarTodos();
+            if (actuales.Length > 0)
+            {
+                int max = 0;
+                for (int i = 0; i < actuales.Length; i++)
+                {
+                    if (actuales[i] != null && actuales[i].Id > max)
+                        max = actuales[i].Id;
+                }
+
+                usuario.Id = max + 1;
+            }
+            else
+            {
+                usuario.Id = 1;
+            }
 
             // Insertar en la lista
             _listaUsuarios.InsertarAlFinal(usuario);
@@ -82,7 +94,7 @@ namespace BecasAPI.Servicios
         }
 
         // Lista todos los usuarios
-        public List<Usuario> ListarUsuarios()
+        public Usuario[] ListarUsuarios()
         {
             return _listaUsuarios.ListarTodos();
         }

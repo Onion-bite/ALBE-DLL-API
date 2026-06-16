@@ -24,8 +24,8 @@ namespace BecasAPI.Controllers
         [HttpGet]
         public IActionResult ObtenerTodos()
         {
-            // ListarUsuarios() recorre la LstSimple y devuelve List<Usuario>
-            List<Usuario> usuarios = _servicio.ListarUsuarios();
+            // ListarUsuarios() recorre la LstSimple y devuelve Usuario[]
+            Usuario[] usuarios = _servicio.ListarUsuarios();
             return Ok(usuarios);
         }
 
